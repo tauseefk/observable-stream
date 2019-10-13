@@ -1,0 +1,23 @@
+{
+  "name": "observable-stream",
+  "version": "0.0.1",
+  "description": "Toy observable streams.",
+  "main": "observable-stream.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tauseefk/observable-stream.git"
+  },
+  "keywords": [
+    "observables",
+    "streams"
+  ],
+  "author": "tauseefk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tauseefk/observable-stream/issues"
+  },
+  "homepage": "https://github.com/tauseefk/observable-stream#readme"
+}
