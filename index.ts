@@ -100,10 +100,10 @@ function debounceTime<T>(ms: number): (s: Stream<T>) => Stream<T> {
             clearTimeout(_timer);
             _timer = null;
           }
-          _timer = setTimeout(() => observer.next(data), ms);
+          _timer = window.setTimeout(() => observer.next(data), ms);
         },
         complete: () => {
-          if (_timer) clearTimeout(_timer);
+          if (_timer) window.clearTimeout(_timer);
           observer.complete();
         },
       });
