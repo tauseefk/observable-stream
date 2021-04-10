@@ -8,7 +8,7 @@
 
 interface Observer<T> {
   next(t: T): void;
-  complete(t?: T): void;
+  complete(): void;
 }
 
 interface Observable<T> {
