@@ -8,7 +8,7 @@
 
 interface Observer<T> {
   next(t: T): void;
-  complete(): void;
+  complete(t?: T): void;
 }
 
 interface Observable<T> {
@@ -34,7 +34,7 @@ export default class Stream<T> implements Observable<T> {
     return this.compose(_map(fn));
   }
 
-  public filter(fn: (t: T) => boolean) {
+  public filter(fn: (t: T) => boolean): Stream<T> {
     return this.compose(_filter(fn));
   }
 
